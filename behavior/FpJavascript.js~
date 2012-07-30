@@ -1,0 +1,10 @@
+
+
+function init() {
+		if (GBrowserIsCompatible()) {
+		var map = new GMap2(document.getElementById("FpMap"));
+		map.setCenter(new GLatLng(37.8331, -122.36512),11);
+		map.addControl(new GSmallZoomControl3D());
+}
+window.onload=init;
+window.onunload=GUnload;

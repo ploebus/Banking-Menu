@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>Alameda County CAN-Banking Menu</title>
+		<?php include("head.html"); ?> 
+		<script type="text/javascript" src="../js/jquery.js" charset="utf-8"> </script>
+		<script type="text/javascript" src="../js/superfish.js" charset="utf-8"> </script>
+		<link type="text/css" rel="stylesheet" href="../css/superfish.css">
+		<link type="text/css" rel="stylesheet" href="FpStyles.css">
+		
+		<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+		<script src="../accan2008.js"></script>
+		<script type="text/javascript">
+			_uacct = "UA-697750-4";
+			urchinTracker();
+		</script>
+		
+		<script type="text/javascript">
+				jQuery(document).ready(function() {
+					jQuery("#terms").change(
+						function(){
+						if($(this).attr('checked'))
+							$("input[type=submit]").attr('disabled','');
+						else
+							$("input[type=submit]").attr('disabled','disabled');
+						//$("input[type=submit]").blur();
+		
+					});
+					
+					
+					jQuery("#login_form").submit(function() {
+						var unameval = $("#username").val();
+						var pwordval = $("#password").val();
+						
+					jQuery.post("backend.php", { username: unameval, 
+						password: pwordval }, 
+						function(data) {
+							$("p#status").html(data);
+						});
+						return false;
+					});
+				});
+		</script>
+	
+
+
+		<script type="text/javascript">
+			jQuery(document).ready(function() {
+				
+				jQuery("#FIlist").toggle(
+			function(){
+				jQuery("#droplist1").fadeIn("slow");
+				
+			},
+			function(){
+			jQuery("#droplist1").fadeOut("slow");
+			}	
+			);	
+			});
+		</script>
+
+		<script type="text/javascript">
+			jQuery(document).ready(function() {
+				jQuery('ul.sf-menu').superfish();
+			});
+		</script>
+   
+	  
+	</head>
+<body>
+	<div class="container">
+		<div >
+			<?php include("headernavTEMP.html");?>
+		</div>
+		<br />
+		<div style="clear:both;margin-top:10px">
+			<h2 align="center" style="margin-bottom: 0" > Welcome to AC CAN's Online Banking Menu!</h2>
+		</div>
+		
+		<div style="width:95%;margin-left:8%">	
+			<div id="IntroContent">		
+			 <p>This is a tool developed by AC CAN member organizations to help service providers connect their clients with the &quot;best fit&quot; financial product for that person's particular needs and preferences.   Our assessment is based on consumer research and feedback from 	providers and clients on the needs and experiences of low-income people in the financial system. </p>
+    <hr />
+			<h3 style="margin-top: 0;">Information about the Banking Menu</h3>
+			<ul style="margin-bottom: 0;">
+			<li id="FIlist">Click to See Financial Institutions with products in the system </li>			
+			<?php include('droplist1.php'); ?>
+			<li>
+			  <a href="documents/TermsofUseforBankingMenuLogin11.18.09FINAL_001.pdf">Read our terms of use and disclaimer.</a><span style="font-size:smaller"> Have a product or institution that isn't included  or have comments about how a product is presented? Email 
+			  admin(at)alamedacountycan.org to find out how to include your product in the Banking Menu.</span>		    </li>
+			<li><a href="documents/BankingMenuFAQNovember2009.pdf" target="blank">Banking Menu FAQs</a></li>
+			<li><a href="BankingMenuDataCollectionTemplate11.18.09_000.xlt">Data Tracking </a></li>
+			<li><a href="http://www.alamedacountycan.org/about.shtml" target="blank">AC CAN Mission and Philosophy </a></li>
+</ul>
+			<hr />		
+			
+		<h3 style="margin-top: 0;">Watch a How-to Demo</h3>
+            <p style="margin-bottom: 0;">
+              <object style="padding-left:50px" width="425" height="344">
+                <param name="movie" value="http://www.youtube.com/v/o7LZJVjJ2cE&hl=en_US&fs=1&">
+                </param>
+                <param name="allowFullScreen" value="true">
+                </param>
+                <param name="allowscriptaccess" value="always">
+                </param>
+                <embed src="http://www.youtube.com/v/o7LZJVjJ2cE&hl=en_US&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed>
+              </object>
+      </p>
+  </div>
+<div id="RightColumn">
+<div><p id="status" style="margin-bottom: 0"></p></div>
+<div id="FpLoginForm">
+		<form method="post" id="login_form" style="margin-bottom: 0;">
+			<p>Username: <input type="text" id="username" /></p>
+			<p>Password:&nbsp <input type="password" id="password" /></p>
+			<fieldset>
+			<table>
+				<tr>
+			<td><input type="checkbox" width="10" height="10" id="terms" value="YES"/></td>
+			<td style="margin-left:5px;text-align:center"><span style="margin-left:3px;font-size:smaller" />I have read and agree to the <a target="blank" href="../documents/Terms of Use for Banking Menu Login 11.18.09FINAL.pdf">terms of use</a></span></td>
+			
+				</tr>
+			</table>
+			</fieldset>
+			<p style="margin-bottom: 0;"><input type="submit" disabled="disabled" value="Login" /></p>
+		</form>
+	</div>
+<!--<img src='../images/bankmenu.png'/>
+<b>Email admin(at)alamedacountycan.org to join AC CAN or get a subscription*</b>
+<p style="margin-top: 0; margin-bottom: 0;"><br />
+    *For subscriptions, we accept payment via check made out to Urban Strategies Council with &quot;Banking Menu Subscription&quot; in the memo field. Payment must be received at 672 13th Street, Oakland CA 94612 before a password is administered. </p>
+-->
+<div style="border:solid thin black;margin-top:5px;width:87%;margin-left:18px">
+  <p align="left" style="margin-top:0;">The Banking Menu is free to <a href="../members.shtml">AC CAN Members</a></p>
+  <p align="left">For non-members, there is a <strong>$120 annual subscription</strong> fee <em>per organization</em>.</p>
+	<ul >
+	  <li style="font-size:smaller">Payment is accepted via PayPal.</li>
+	  <li style="font-size:smaller">Login ID&rsquo;s are generated by a live human, so please allow one week.</li>
+	</ul>
+  <p align="left" style="margin-bottom: 0px;">For questions, email admin(at)alamedacountycan.org</p>
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" style="margin-top: 0; margin-bottom: 0;">
+	  <div align="center">
+	      <input type="hidden" name="cmd" value="_s-xclick">
+	      <input type="hidden" name="hosted_button_id" value="3W9U6HUL76MVG">
+	      <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+	      <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+	  </div>
+	</form>
+</div>
+
+</div>
+<br />
+<div style="clear:both;width:90%;margin-top:10px">
+<?php
+	include("../footer.php");
+?>
+</div></div></div>
+</body>
+</html>

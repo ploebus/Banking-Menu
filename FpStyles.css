@@ -1,0 +1,466 @@
+/*general pages layout*/
+
+
+
+div.container {
+	
+	line-height:150%;
+	margin:auto;
+	width:1000px;
+	
+	/* max-width */
+}
+div.header a {
+	margin-left:150px;
+	margin-bottom:40px;
+	width:70%;
+}
+
+#IntroContent{
+	padding-right:20px;
+	width:600px;
+	/*border:solid thin black;*/
+	float:left;
+	}
+#RightColumn{
+	width:300px;
+	float:left;
+     }
+/*Form Results Page*/
+
+#FpMap {
+	width:95%;
+	border:solid 3px black;
+	height:400px;
+	margin:10px 5px 0px 5px;
+	}
+
+
+
+td.tableHeader{
+	font-size:0.8em;
+	font-weight:bolder;
+}
+
+#FpResults{
+	float:left;
+	width:95%;
+	margin-top:10px;
+
+	text-align:left;
+	margin-left:20px;
+	}
+.alert{
+	font-size:small;
+	color:red;
+	}
+#resultHeader th {
+	color:black;
+	font-size:0.8 em;
+	/*writing-mode: tb-rl;
+	filter: fliph flipv;*/
+	width:16%;
+	text-align:center;
+	
+	}
+
+#tooltip{
+-moz-border-radius-bottomleft:6px;
+-moz-border-radius-bottomright:6px;
+-moz-border-radius-topleft:6px;
+-moz-border-radius-topright:6px;
+background:#000000 none repeat scroll 0 0;
+color:white;
+font-family:tahoma;
+font-size:12px;
+display:none;
+width:150px;
+padding:4px 10px;
+opacity:0.8;
+			}
+#close {
+	color:#CCDDCC;
+	float:right;
+	}
+	
+ input[type="checkbox"]#institutionSelect{
+	-moz-appearance:none;
+	width:20px;
+	height:20px;
+	padding:0%;
+	margin:0%;
+	font-size:large;
+	
+	float:right;
+	}
+.mapClick{
+	font-size:.75em;
+	color:blue;
+	font-weight:bold;
+	}
+.addToCart{
+	font-size:.75em;
+	color:blue;
+	font-weight:bold;
+	}
+.bankName{
+	text-align:left;
+	font-size:1.3em;
+	font-weight:bold;
+	}
+#FpAnswers{
+	
+	width:90%;
+	height:200px;
+	font-weight:bold;
+	font-size:medium;
+	margin-top:30px;
+	padding-left:5px;
+	 background-image:url('../images/EndClientSession.png');
+	background-repeat:no-repeat;
+
+	}
+#FpAssessment{
+	border-bottom:thin solid green;
+	}
+#ResultTable{
+	width:96%;
+	border-collapse:collapse;
+	margin-right:auto;
+	/*border:solid thin black;*/
+	}
+#FpSummary{
+	font-weight:bold;
+	
+	text-align:center;
+	background-image:url(rowback.png);
+	
+	}
+#FpSummary1{
+	font-weight:bold;
+
+
+	text-align:center;
+	background-image:url(rowback.png);
+	
+	}
+
+#FpResults:hover{
+cursor:pointer;}
+/*Float Help*/
+
+#float_help{
+	width:200px;	
+	position:fixed;
+	right:280px;
+	top:200px;
+	z-index:1;
+	border:2px outset green;
+	background-color:white;
+	display:none;
+	padding:5px;
+	font-size:1.1em;
+	font-weight:bold;
+	}
+tr#assessment{
+	display:none;
+	}
+	
+/*Form Style*/
+
+.coach {
+	
+	float:left;
+	width:100%;
+	}
+.coach li {
+	font-style:italic;
+	font-weight:normal;
+	font-size:small;
+	}
+
+	
+div.formsection{
+	float:left;
+	width:100%;
+	padding-bottom:5px;
+	border:2px outset grey;
+	margin-bottom:5px;
+	font-size:12pt;
+	}
+
+.formsection  select {
+font-size:larger;
+}
+
+/*input{
+	font-size:.3em;
+	}*/
+
+	
+input:focus,text-area:focus, select:focus{
+	/*border:2px solid #7AA;*/
+	 border:solid 2px #73A6FF;  
+         background:#EFF5FF;  
+         color:#000;
+	}
+
+
+
+.formsection label{
+	display:block;
+	clear:both;
+	font-size:90%;
+	font-weight:bold;
+	margin:.5em 0 0;
+	padding-bottom:.5em;
+	}
+.FpForm label img {
+	padding:5px;
+	}
+
+.midSection{
+width:100%;
+float:left;
+overflow:hidden;
+}
+	
+.midContent{
+	width:600px;
+	float:left;
+	margin:10px 0 0 15px;
+	}
+input[type="image"]{
+	margin:3em 5em 0;
+	}
+.buttongroup{
+	float:left;
+	}
+.buttongroup input{
+	float:left;
+	clear:both;
+	margin:0;
+	padding:0;
+	line-height:0;
+	}
+.buttongroup label{
+	background-color:none;
+	width:20em;
+	float:left;
+	margin:0 0 0 .5em;
+	font-weight:normal;
+	clear:none;
+	}
+/*side menu drop downs*/
+#droplist {
+		
+	-moz-border-radius-bottomleft:6px;
+	-moz-border-radius-bottomright:6px;
+	-moz-border-radius-topleft:6px;
+	-moz-border-radius-topright:6px;
+	background:#669966 none repeat scroll 0 0;
+	text-align:center;
+	font-family:tahoma;
+	font-size:12px;
+	width:95%;
+	margin:auto;
+	padding:4px 10px;
+	opacity:0.9;
+
+
+}
+a #droplist {
+	background-color:none;
+	color:green;
+	
+}
+#BankList{
+	margin-top:5px;
+	color:black;
+	}
+
+#ProductList a{
+	color:green;
+	padding:0px;
+	margin-left:0px;
+	}
+
+
+
+/*FpProfile*/
+div#FpProfile{
+	width:70%;
+	float:left;
+	margin:10px;}
+table#PrintProduct{
+	margin-left:10px;
+	border:4px outset black;
+	border-collapse:collapse;
+	}
+.printdescription{
+	border:1px solid black;
+	font-size:11pt;
+	color:white;
+	background-color:#669966;
+	padding:3px;
+	font-weight:bold
+	}
+.printlabel{
+	font-size:11pt;
+	text-align:center;
+	border:1px solid black;
+	padding:3px;
+	}
+.printlabel1{
+	font-weight:bolder;
+	font-size:13pt;
+	text-align:center;
+	border:1px solid black;
+	border-bottom:0px;
+	padding:3px;
+	}
+.printlabel2{
+	border:0px;
+	}
+
+/*Intro Page */
+
+#TrainingVideo{
+	width:400px;
+	border:3px outset black;
+	margin-right:10px;
+	float:left;
+	margin-left:10px;
+	}
+
+.leftColumn{
+	width:240px;
+	float:left;
+	z-index:0;
+	margin-top:10px;
+	
+}
+.leftContent{
+	width:96%;
+	margin:auto;
+	}
+#RightColumn p{
+	font-size:1em;
+	padding-left:10px;
+	}
+#RightColumn img{
+       padding:20px;
+       }
+#RightContent{
+	
+	width:25%;
+	font-size:small;
+	float:left;
+	z-index:0;
+	margin-top:10px;
+	}
+#RightContent li{
+	font-size:small;
+	font-weight:bold;
+	list-style-type:none;
+	text-indent:0px;
+	
+	}
+#RightContent>li:before{
+	content:"\00BB \0020";
+	color:blue;
+	}
+
+	
+#login_form {
+	margin:20px 20px 20px;
+	padding:10px .75em .5em;
+	width:80%;
+	background-image:url(rowback.png);
+	} 
+#FpFormFieldset{
+	
+	}
+#IntroContent li{
+	font-size:small;
+	font-weight:bold;
+	margin:0px 0px 3px 0px;
+	}
+/*side menu drop downs*/
+#droplist ul{
+	margin:0px;
+	padding:0px
+}
+#droplist li{
+	list-style-type:none;
+	text-align:left;
+	margin-left:5px;
+	font-weight:normal;
+	font
+}
+#droplist a {
+	background:none;
+	border:none;
+	font-size:0.6em;
+	color:white;
+	font-weight:bold;
+}
+
+#ProductList {
+	background:none;
+	list-style-type:disc;	
+	}
+
+#member {
+	width:170px;
+	float:left;
+	border:3px outset grey;
+	margin-bottom:10px;}
+#member p,i {
+	text-align:center;
+	font-weight:normal;
+	font-size:small}
+
+#selectedProduct {
+-moz-border-radius-bottomleft:10px;
+-moz-border-radius-bottomright:10px;
+-moz-border-radius-topleft:10px;
+-moz-border-radius-topright:10px;
+width:100%;
+margin:auto;
+border:outset thin blue;
+text-align:center;
+}
+#selectedProduct li {
+
+font-size:.7em;
+width:95%;
+margin:auto;
+text-align:left;
+
+}
+input.btn { 
+	  color:#050; 
+  font: bold 84% 'trebuchet ms',helvetica,sans-serif; 
+	} 
+
+.formsection select,input {
+	margin-left:10px;
+}
+.buttongroup{
+	margin-left:10px;
+}
+/*Result Filter Form*/
+#geoSelection {
+	text-align:center;
+	vertical-align:middle;
+	padding:10px;
+	height:50px;margin-top:5px;
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+	box-shadow: 10px 10px 5px #888;
+}
+
+
+
+

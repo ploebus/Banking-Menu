@@ -1,0 +1,33 @@
+<?php
+require('..\php\db_login.php');
+function redirect(){
+header('Location: fpForm.html');
+}
+//store form inputs
+$username = $_POST['username'];
+$password = $_POST['password'];
+//connect to and query databse
+$connect=mysql_connect("$db_host","$db_username","$db_password");
+mysql_select_db("$db_database",$connect);
+$result=mysql_query('SELECT * from fp_users WHERE username like"'.$username.'" and passwd like "'.$password.'"');
+$row=mysql_fetch_array($result);
+//conditonal return
+IF ($row){
+echo '<script language="javascript" type="text/javascript">
+     
+     window.location="http://localhost/alamedacountycan/FinancialProducts/fpForm.html";
+     
+ </script>'
+;
+}
+
+
+//if ($username == "test" && $password == "password")
+//{
+	//print "<strong>Login succeeded!</strong>";
+//}
+else
+{
+	print "<strong>Incorrect login. Have your registered for this service?</strong>";
+}
+?>

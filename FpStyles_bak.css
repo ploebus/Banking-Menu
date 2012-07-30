@@ -1,0 +1,319 @@
+/*general pages layout*/
+#container{
+	width:1000px;
+	margin-right:auto;
+	}
+
+
+
+/*Form Results Page*/
+#FpMap {
+	float:right;
+	width:35%;
+	border:solid 3px black;
+	height:400px;
+	margin-left:10px;
+	margin-top:30px;
+	}
+#FpResults{
+	float:left;
+	width:40%;
+	margin-top:10px;
+
+	text-align:left;
+	margin-left:20px;
+	}
+.alert{
+	font-size:small;
+	color:red;
+	}
+#resultHeader th {
+	color:black;
+	font-size:.8 em;
+	/*writing-mode: tb-rl;
+	filter: fliph flipv;*/
+	width:16%;
+	text-align:center;
+	
+	}
+
+ input[type="checkbox"]#institutionSelect{
+	-moz-appearance:none;
+	width:20px;
+	height:20px;
+	padding:0%;
+	margin:0%;
+	font-size:large;
+	
+	float:right;
+	}
+#FpAnswers{
+	float:right;
+	width:35%;
+	height:200px;
+	font-weight:bold;
+	font-size:medium;
+       	margin-top:30px;
+        padding:5px;
+       background-image:url('../images/EndClientSession.png');
+	   background-repeat:no-repeat;
+	}
+#FpAssessment{
+	border-bottom:thin solid green;
+	}
+#ResultTable{
+	width:100%;
+	border-collapse:collapse;
+	/*border:solid thin black;*/
+	}
+#FpSummary{
+	font-weight:bold;
+	font-style:arial;
+	text-align:center;
+	background-image:url(rowback.png);
+	
+	}
+#FpSummary1{
+	font-weight:bold;
+	font-style:arial;
+
+	text-align:center;
+	background-image:url(rowback.png);
+	
+	}
+
+#FpResults:hover{
+cursor:pointer;}
+/*Float Help*/
+
+#float_help{
+	width:200px;	
+	position:fixed;
+	right:280px;
+	top:200px;
+	z-index:1;
+	border:2px outset green;
+	background-color:white;
+	display:none;
+	padding:5px;
+	font-size:1.1em;
+	font-weight:bold;
+	}
+tr#assessment{
+	display:none;
+	}
+	
+/*Form Style*/
+
+.coach {
+	font-style:italic;
+	float:left;
+	width:100%;
+	}
+.coach li {
+	font-style:italic;
+	font-weight:normal;
+	font-size:small;
+	}
+
+	
+div.formsection{
+	float:left;
+	width:100%;
+	padding-bottom:5px;
+	border:2px outset grey;
+	margin-bottom:5px;
+	font-size:12pt;
+	}
+
+.formsection  select {
+font-size:larger;
+}
+
+/*input{
+	font-size:.3em;
+	}*/
+
+	
+input:focus,text-area:focus, select:focus{
+	/*border:2px solid #7AA;*/
+	 border:solid 2px #73A6FF;  
+         background:#EFF5FF;  
+         color:#000;
+	}
+
+
+
+.formsection label{
+	display:block;
+	clear:both;
+	font-size:90%;
+	font-weight:bold;
+	margin:.5em 0 0;
+	padding-bottom:.5em;
+	}
+.FpForm label img {
+	padding:5px;
+	}
+
+.midSection{
+width:60%;
+float:left;
+margin-left:20px;
+overflow:hidden;
+}
+	
+.midContent{
+	width:60%;
+	float:left;
+	margin:10px 0 0 100px;
+	}
+input[type="image"]{
+	margin:3em 5em 0;
+	}
+.buttongroup{
+	float:left;
+	}
+.buttongroup input{
+	float:left;
+	clear:both;
+	margin:0;
+	padding:0;
+	line-height:0;
+	}
+.buttongroup label{
+	background-color:none;
+	width:20em;
+	float:left;
+	margin:0 0 0 .5em;
+	font-weight:normal;
+	clear:none;
+	}
+/*side menu drop downs*/
+#droplist{
+	float:left;
+	width:15%;
+	margin-left:25px;
+}
+#droplist1{
+	float:left;
+	width:100%;
+	margin-left:25px;
+}
+#BankList{
+	font-weight:bold;
+	}
+#ProductList {
+	color:green;
+	padding:0px;
+	margin-left:0px;
+	}
+
+/*FpProfile*/
+div#FpProfile{
+	width:70%;
+	float:left;
+	margin:10px;}
+table#PrintProduct{
+	margin-left:10px;
+	border:4px outset black;
+	border-collapse:collapse;
+	}
+.printdescription{
+	border:1px solid black;
+	font-size:11pt;
+	color:white;
+	background-color:#669966;
+	padding:3px;
+	font-weight:bold
+	}
+.printlabel{
+	font-size:11pt;
+	text-align:center;
+	border:1px solid black;
+	padding:3px;
+	}
+.printlabel1{
+	font-weight:bolder;
+	font-size:13pt;
+	text-align:center;
+	border:1px solid black;
+	border-bottom:0px;
+	padding:3px;
+	}
+.printlabel2{
+	border:0px;
+	}
+
+/*Intro Page */
+
+#TrainingVideo{
+	height:200px;
+	width:250px;
+	border:solid thin black;
+	margin-right:10px;
+	float:left;
+	margin-left:10px;
+	}
+#IntroContent{
+	margin:1%;
+	width:45%;
+	/*border:solid thin black;*/
+	float:left;
+	}
+#RightColumn{
+	width:30%;
+	float:left;
+        padding:15px;
+	}
+#RightColumn img{
+       padding:20px;
+       }
+#RightContent{
+	width:90%;
+	padding:5%;
+	font-size:small;
+	}
+#RightContent li{
+	font-size:small;
+	font-weight:bold;
+	list-style-type:none;
+	text-indent:0px;
+	
+	}
+#RightContent>li:before{
+	content:"\00BB \0020";
+	color:blue;
+	}
+
+	
+#login_form {
+	margin:20px 20px 20px;
+	padding:10px .75em .5em;
+	width:80%;
+	background-image:url(rowback.png);
+	} 
+#FpFormFieldset{
+	
+	}
+#IntroContent li{
+	font-size:small;
+	font-weight:bold;
+	margin:0px 0px 3px 0px;
+	}
+#droplist li{
+	list-style:disc;
+	}
+#droplist1 li{
+	list-style:disc;
+	}
+#member {
+	width:170px;
+	float:left;
+	border:3px outset grey;
+	margin-bottom:10px;}
+#member p,i {
+	text-align:center;
+	font-weight:normal;
+	font-size:small}
+

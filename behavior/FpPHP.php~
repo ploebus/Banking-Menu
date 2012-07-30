@@ -1,0 +1,14 @@
+<?php
+
+$select='SELECT F1 as Name, F3 as Product,F4 as Assessment,dd,internet,transfer,waive,maintain,Q7a,dd+internet+transfer as score from financialinstitutions
+ Where 
+			begin <=' .$_POST["begin"]. 
+			' && bounce is '.$_POST["bounce"].
+			' && ssn is '.$_POST["ssn"].
+			' && checks is '.$_POST["checks"].
+			' && legal is '.$_POST["legal"].  
+			' && chex is '.$_POST["chex"].
+			' order by score desc;';
+$query=mysql_query($select);
+
+?>

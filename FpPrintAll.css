@@ -1,0 +1,31 @@
+#menu{
+	display:none;
+	}
+#container{
+	border:0px;
+	width:100%;
+	}
+#header{
+	display:none;
+	}
+#head{
+	display:none;
+	}
+table.PrintProduct{
+	width:1000px;
+	margin:5px;
+	border:1px solid #AAA;
+	}
+.FpProfile{
+	width:660px;
+	margin:0px;
+	}
+.printdescription{
+	font-size:small;
+	font-weight:normal;
+	}
+.printlabel1{
+	font-size:small;
+	font-weight:bold;
+	}
+.pagebreakhere {page-break-after: always}

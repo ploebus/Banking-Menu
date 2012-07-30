@@ -1,0 +1,18 @@
+<?php
+
+require('../php/db_login.php');
+
+//connect to database
+$dbc=mysql_connect($db_host,$db_username,$db_password);
+$connection=mysql_select_db($db_database,$dbc);
+
+
+$query="select distinct F1 from financialinstitutions;";
+$result=mysql_query($query);
+echo '<div id="droplist" style="display:none">';
+	while($row=mysql_fetch_array($result)){
+		echo '<li>'.$row["F1"].'</li>';
+		};
+	echo '</div>';
+//mysql_close($connection);
+?>
