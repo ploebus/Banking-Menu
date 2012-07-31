@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Welcome to CodeIgniter</title>
+<title>Banking Menu Admin Panel</title>
 
 	<style type="text/css">
 
@@ -54,10 +54,10 @@
 	</style>
 </head>
 <body>
-	<h1>Welcome to Banking Menu Admin Panel</h1>
+	<h1>Banking Menu Admin Panel</h1>
 
 	<ul>
-		<li><a href="">Add financial institute</a></li>
+		<li><a href="index.php/admin/add">Add financial institute</a></li>
 		<li><a href="index.php/admin/updateRecords">Edit financial institute</a></li>
 		<li><a href="index.php/admin/usage">See usage panel</a></li>
 	</ul>

@@ -11,7 +11,7 @@
 |	http://example.com/
 |
 */
-$config['base_url']	= "http://www.alamedacountycan.org/FinancialProductsv2/admin/";
+$config['base_url']	= "http://sql:85/alamedacountycan/FinancialProductsv2/admin/";
 
 /*
 |--------------------------------------------------------------------------
